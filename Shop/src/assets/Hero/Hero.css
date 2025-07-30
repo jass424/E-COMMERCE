@@ -1,0 +1,177 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 10%;
+  background: linear-gradient(to bottom, #e3e0e4, #f0f0f0);
+  min-height: 90vh;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.hero-left {
+  max-width: 50%;
+  padding-right: 20px;
+}
+
+.tagline {
+  font-size: 70px;
+  letter-spacing: 1px;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.headline {
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1.1;
+  color: #111;
+}
+
+.hand-icon {
+  width: 45px;
+  vertical-align: middle;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+.latest-btn {
+  margin-top: 30px;
+  background-color: #4db6c9;
+  color: white;
+  font-size: 18px;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: background 0.3s ease;
+}
+
+.latest-btn:hover {
+  background-color: #5db7c7;
+}
+
+.hero-right .hero-image {
+  width: 500px;
+  height: auto;
+  max-width: 100%;
+}
+
+/* ✅ Large Screens */
+@media (max-width: 1280px) {
+  .hero-left {
+    padding-left: 60px;
+  }
+
+  .tagline {
+    font-size: 60px;
+  }
+
+  .headline {
+    font-size: 48px;
+  }
+
+  .hand-icon {
+    width: 40px;
+  }
+
+  .latest-btn {
+    font-size: 17px;
+    padding: 12px 24px;
+  }
+
+  .hero-right .hero-image {
+    width: 450px;
+  }
+}
+
+/* ✅ Medium Tablets */
+@media (max-width: 1024px) {
+  .hero {
+    padding: 60px 5%;
+  }
+
+  .hero-left {
+    max-width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+
+  .tagline {
+    font-size: 50px;
+  }
+
+  .headline {
+    font-size: 40px;
+  }
+
+  .hero-right {
+    text-align: center;
+  }
+
+  .hero-right .hero-image {
+    width: 350px;
+  }
+}
+
+/* ✅ Small Tablets / Landscape Phones */
+@media (max-width: 800px) {
+  .tagline {
+    font-size: 40px;
+  }
+
+  .headline {
+    font-size: 32px;
+  }
+
+  .latest-btn {
+    font-size: 15px;
+    padding: 10px 22px;
+  }
+
+  .hero-right .hero-image {
+    width: 280px;
+  }
+}
+
+/* ✅ Mobile View */
+@media (max-width: 500px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+  }
+
+  .hero-left {
+    max-width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+
+  .tagline {
+    font-size: 32px;
+  }
+
+  .headline {
+    font-size: 26px;
+  }
+
+  .hand-icon {
+    width: 40px;
+  }
+
+  .hero-right {
+    display: none;
+  }
+
+  .latest-btn {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 0;
+    justify-content: center;
+  }
+}

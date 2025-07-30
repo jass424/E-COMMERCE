@@ -1,0 +1,71 @@
+.view-users-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.view-users-container h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 28px;
+  color: #333;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.user-table th,
+.user-table td {
+  padding: 14px 20px;
+  text-align: left;
+}
+
+.user-table thead {
+  background-color: #f2f4f7;
+  border-bottom: 2px solid #ddd;
+}
+
+.user-table th {
+  font-weight: 600;
+  color: #444;
+}
+
+.user-table tbody tr {
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s ease;
+}
+
+.user-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.user-table td {
+  color: #555;
+  font-size: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .user-table th,
+  .user-table td {
+    font-size: 13px;
+    padding: 10px 12px;
+  }
+
+  .view-users-container {
+    margin: 20px;
+    padding: 16px;
+  }
+
+  .view-users-container h2 {
+    font-size: 22px;
+  }
+}

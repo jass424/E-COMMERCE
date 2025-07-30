@@ -1,0 +1,165 @@
+.newsletter {
+  width: 100%;
+  min-height: 40vh;
+  background: linear-gradient(to bottom, #fddde6, #ffffff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+  margin-top: 600px;
+  position: relative;
+  z-index: 1;
+}
+
+.newsletter h1 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
+
+.newsletter p {
+  font-size: 20px;
+  color: #666;
+  text-align: center;
+  margin: 0;
+  max-width: 600px;
+}
+
+.newsletter-input {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.newsletter-input input {
+  padding: 12px 20px;
+  width: 280px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 18px;
+}
+
+.newsletter-input button {
+  padding: 12px 24px;
+  background-color: #5db7c7;
+  color: white;
+  border: none;
+  font-weight: 500;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+
+.newsletter-input button:hover {
+  background-color: #333;
+}
+
+.product-list {
+  position: relative;
+  z-index: 2;
+}
+
+/* ✅ 1280px */
+@media (max-width: 1280px) {
+  .newsletter h1 {
+    font-size: 26px;
+  }
+
+  .newsletter p {
+    font-size: 16px;
+  }
+
+  .newsletter-input input {
+    width: 250px;
+  }
+
+  .newsletter-input button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+
+/* ✅ 1024px */
+@media (max-width: 1024px) {
+  .newsletter h1 {
+    font-size: 22px;
+  }
+
+  .newsletter p {
+    font-size: 14px;
+  }
+
+  .newsletter-input input {
+    width: 220px;
+    font-size: 14px;
+  }
+
+  .newsletter-input button {
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+  }
+}
+
+/* ✅ 768px */
+@media (max-width: 768px) {
+  .newsletter {
+    padding: 20px 10px;
+    margin-top: 400px;
+  }
+
+  .newsletter h1 {
+    font-size: 20px;
+  }
+
+  .newsletter p {
+    font-size: 13px;
+  }
+
+  .newsletter-input input {
+    width: 200px;
+  }
+
+  .newsletter-input button {
+    width: 100px;
+    font-size: 13px;
+  }
+}
+
+/* ✅ 500px */
+@media (max-width: 500px) {
+  .newsletter {
+    padding: 10px;
+    margin-top: 300px;
+    gap: 15px;
+  }
+
+  .newsletter h1 {
+    font-size: 18px;
+  }
+
+  .newsletter p {
+    font-size: 12px;
+    max-width: 90%;
+  }
+
+  .newsletter-input {
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .newsletter-input input {
+    width: 100%;
+  }
+
+  .newsletter-input button {
+    width: 100%;
+  }
+}
